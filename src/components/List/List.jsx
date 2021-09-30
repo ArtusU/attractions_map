@@ -4,17 +4,11 @@ import PlaceDetails from '../PlaceDetails/PlaceDetails';
 
 import useStyles from './styles.js';
 
-const List = ({ type, setType, rating, setRating, childClicked, isLoading }) => {
+const List = ({ places, type, setType, rating, setRating, childClicked, isLoading }) => {
   const [elref, setElRef] = useState('restaurants');
   const [elrating, setElRating] = useState('above 2.0');
   const classes = useStyles();
 
-  const places = [
-    { name: 'Cool Place' },
-    { name: 'Shite Den' },
-    { name: 'Black Cave' },
-    { name: 'Tavern of the Scull' },
-  ];
 
   return (
     <div className={classes.container}>
